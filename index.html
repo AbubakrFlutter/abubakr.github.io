@@ -1,83 +1,197 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <title>Arab tilini o‘rganish</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arab tilini o'rganish - Mobil Ilova</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #00b4d8, #0096c7);
+            color: #333;
+        }
 
-    .card {
-      background: #ffffff;
-      color: #333;
-      max-width: 420px;
-      width: 90%;
-      border-radius: 16px;
-      padding: 30px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-      text-align: center;
-    }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-    .logo {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            color: white;
+        }
 
-    h1 {
-      font-size: 24px;
-      margin-bottom: 10px;
-      color: #2c5364;
-    }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
 
-    p {
-      font-size: 15px;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
+        .subtitle {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
 
-    .info {
-      background: #f2f6f8;
-      padding: 15px;
-      border-radius: 10px;
-      font-size: 14px;
-    }
+        .download-btn {
+            display: inline-block;
+            background: white;
+            color: #00b4d8;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
 
-    footer {
-      margin-top: 20px;
-      font-size: 12px;
-      color: #777;
-    }
-  </style>
+        .download-btn:hover {
+            transform: translateY(-5px);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .icon {
+            font-size: 4em;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            color: #00b4d8;
+            margin-bottom: 10px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            background: rgba(255,255,255,0.2);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .stat h2 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .subtitle {
+                font-size: 1.1em;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <div class="card">
-    <div class="logo">📘</div>
-    <h1>Arab tilini o‘rganish</h1>
+    <div class="container">
+        <header>
+            <h1>📚 Arab tilini o'rganish</h1>
+            <p class="subtitle">Eng oson va qiziqarli usulda Arab tilini o'rganing!</p>
+            <a href="https://play.google.com/store/apps/details?id=com.abubakr.arabtiliniorganamiz" class="download-btn">
+                📱 Yuklab olish
+            </a>
+        </header>
 
-    <p>
-      Ushbu sahifa <strong>Arab tilini o‘rganish</strong> mobil ilovasi uchun
-      rasmiy veb-sahifa hisoblanadi.
-    </p>
+        <div class="stats">
+            <div class="stat">
+                <h2>1000+</h2>
+                <p>So'zlar va iboralar</p>
+            </div>
+            <div class="stat">
+                <h2>50+</h2>
+                <p>Interaktiv darslar</p>
+            </div>
+            <div class="stat">
+                <h2>10K+</h2>
+                <p>Foydalanuvchilar</p>
+            </div>
+            <div class="stat">
+                <h2>4.8⭐</h2>
+                <p>Reyting</p>
+            </div>
+        </div>
 
-    <div class="info">
-      Bu sayt ilovadagi reklama tizimini (app-ads.txt) tasdiqlash va
-      foydalanuvchilar uchun maʼlumot berish maqsadida yaratilgan.
+        <div class="features">
+            <div class="feature-card">
+                <div class="icon">📚</div>
+                <h3>Interaktiv darslar</h3>
+                <p>50+ ta bosqichma-bosqich darslar bilan Arab tilini o'rganing</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🎴</div>
+                <h3>Flashcardlar</h3>
+                <p>1000+ so'zni tez va oson eslab qolish uchun flashcard tizimi</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🏆</div>
+                <h3>Reyting</h3>
+                <p>Do'stlar bilan raqobatlashing va reyting jadvalida yuqori o'rinlarga chiqing</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🔊</div>
+                <h3>Audio talaffuz</h3>
+                <p>Har bir so'zning to'g'ri talaffuzini eshiting</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🤖</div>
+                <h3>AI Tarjimon</h3>
+                <p>Sun'iy intellekt bilan istalgan matnni tarjima qiling</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🎯</div>
+                <h3>Quizlar</h3>
+                <p>Bilimingizni testlar orqali sinab ko'ring</p>
+            </div>
+        </div>
+
+        <footer>
+            <h2>Bugun boshlang!</h2>
+            <p style="margin: 20px 0;">Arab tilini o'rganish sayohatingizni boshlang</p>
+            <a href="https://play.google.com/store/apps/details?id=com.abubakr.arabtiliniorganamiz" class="download-btn">
+                📱 Google Play'dan yuklab olish
+            </a>
+            <p style="margin-top: 40px; opacity: 0.8;">© 2024 Arab tilini o'rganish</p>
+        </footer>
     </div>
-
-    <footer>
-      © 2026 Arab tilini o‘rganish
-    </footer>
-  </div>
 </body>
 </html>
